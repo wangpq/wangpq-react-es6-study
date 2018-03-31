@@ -1,4 +1,4 @@
-# wangpq-react-es6-demo
+# wangpq-react-es6-study
 
 一个使用官方文档方式安装的react开发环境，支持es6的语法特性，个人对结构做了部分修改，大家可以根据实际情况进行处理。
 
@@ -7,7 +7,7 @@
 下载本项目到本地，cd进入本项目，然后cnpm install下载依赖包，然后npm start即可运行此demo。使用的几个命令如下：
 
 ```bash
-cd wangpq-react-es6-demo
+cd wangpq-react-es6-study
 ```
 
 ```bash
