@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* For demo */
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  font-size:48px;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
