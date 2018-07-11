@@ -4,14 +4,14 @@
 
 **本demo使用方法：**
 
-下载本项目到本地，cd进入本项目，然后cnpm install下载依赖包，然后npm start即可运行此demo。使用的几个命令如下：
+下载本项目到本地，cd进入本项目，然后npm install下载依赖包，然后npm start即可运行此demo。使用的几个命令如下：
 
 ```bash
 cd wangpq-react-es6-study
 ```
 
 ```bash
-cnpm install 
+npm install 
 ```
 
 ```bash
