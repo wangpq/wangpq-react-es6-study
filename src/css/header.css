@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* For demo */
+.App-header{
+  display: flex;
+}
+.App-header img{
+  height:38px;
+}
+.App-header .logo-txt{
+  color: #0dc3ef;
+}
+.App-header .item:first-of-type{
+  flex :1
+}
+.App-header .item:last-of-type{
+  flex :3;
+  text-align: right;
+}
+.App-header ul {
+  display: inline-block
+}
+.App-header ul li{
+  border-bottom: none;
+}
+

@@ -7,6 +7,7 @@ class PrdDetail extends Component {
     super(props);
     //alert("constructor");
     this.state = {
+        isLoading : true,
         rateValue: 3
     };
   }
@@ -24,12 +25,12 @@ class PrdDetail extends Component {
 
   componentDidMount (){
     this.setState({ 
+      isLoading : false,
       rateValue : Math.round(19/10)
     });
   }
 
   render() { 
-    //alert("render")
 
     if(this.state.isLoading){
       return (  <Spin></Spin>)

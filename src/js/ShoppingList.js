@@ -13,14 +13,8 @@ class ShoppingList extends Component {
     };
   }
 
-  componentWillMount (){
-    //alert("componentWillMount")
-
-  }
-
   componentDidMount(){
     //alert("componentDidMount");
-
     fetch('https://cnodejs.org/api/v1/topic/5433d5e4e737cbe96dcef312').then((res)=>{
       if(res.ok){  
           res.text().then((respon)=>{

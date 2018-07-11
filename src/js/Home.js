@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../temp/logo.svg';
 import 'antd/dist/antd.css';
 import '../css/home.css';
 import {Tabs } from 'antd';
@@ -18,7 +17,6 @@ class Home extends Component {
     return (
       <div className="App">
         <header className="header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">欢迎学习React</h1>
         </header>
 

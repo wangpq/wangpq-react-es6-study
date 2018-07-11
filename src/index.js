@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 //import registerServiceWorker from './js/registerServiceWorker'
@@ -25,17 +24,14 @@ const About = () => (
 import Home from './js/Home'
 import About from './js/About'
 import AntdDemo from './js/AntdDemo'
+import Header from './js/Header'
 import './css/app.css';
 
 const BasicExample = () => (
     <Router>
       <div>
-        <ul className="App-header">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/AntdDemo">AntdDemo</Link></li>
-        </ul>
-  
+        <Header></Header>
+
         <hr/>
 
         <Route exact path="/" component={Home}/>

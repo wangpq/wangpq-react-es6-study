@@ -17,3 +17,7 @@ body {
 .ant-carousel .slick-slide h3 {
   color: #fff;
 }
+
+.topics-list li{
+  border-bottom: 1px dashed #ccc;
+}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Spin} from 'antd';
 
-
 class PrdDetail extends Component {
   constructor(props) {
     super(props);
@@ -16,11 +15,10 @@ class PrdDetail extends Component {
   componentWillMount (){
   }
 
-
   componentDidMount(){
-    fetch('https://cnodejs.org/api/v1/user/alsotang').then((res)=>{
+    fetch('https://cnodejs.org/api/v1/user/alsotang').then((res)=>{ 
       if(res.ok){  
-          res.text().then((respon)=>{
+          res.text().then((respon)=>{  
             var data=JSON.parse(respon).data;
             this.setState({
                 isLoading  : false,
