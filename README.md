@@ -23,7 +23,7 @@ npm start
 
 ## 官方文档方式安装react环境
 
-**首先确保全局安装了cnpm,cnpm 全局安装create-react-app模块**
+**首先确保全局安装了npm,npm 全局安装create-react-app模块**
 ```bash
 npm install -g create-react-app
 ```
