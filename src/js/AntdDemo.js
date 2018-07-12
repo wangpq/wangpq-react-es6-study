@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { Carousel,Rate,DatePicker,Spin  } from 'antd';
+
+import {Link,Redirect } from 'react-router-dom';
+
+
 import '../css/AntdDemo.css';
 
 class PrdDetail extends Component {
   constructor(props) {
     super(props);
-    //alert("constructor");
+
     this.state = {
         isLoading : true,
         rateValue: 3
@@ -13,7 +17,10 @@ class PrdDetail extends Component {
   }
 
   handleToAbout = () => {
-    window.location.href="/about";
+    //window.location.href="/about";
+    
+    this.setState({redirect: true});
+
   }
 
 
@@ -32,6 +39,10 @@ class PrdDetail extends Component {
 
   render() { 
 
+    if (this.state.redirect) {
+      return <Redirect push to="/about" />; 
+    }
+  
     if(this.state.isLoading){
       return (  <Spin></Spin>)
     }else{
@@ -39,10 +50,10 @@ class PrdDetail extends Component {
         <div className="antd">
    
             <div>
-              <a href="/">跳转到首页home超链接示例</a>
+              <Link to="/">跳转到首页home超链接示例</Link> 
             </div>
 
-            <button onClick={this.handleToAbout}>跳转AboutJS事件</button>
+            <button onClick={this.handleToAbout}>点击我跳转关于事件</button>
             <br/><br/>
 
             <Carousel autoplay>

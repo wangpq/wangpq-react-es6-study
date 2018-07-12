@@ -20,4 +20,5 @@ body {
 
 .topics-list li{
   border-bottom: 1px dashed #ccc;
+  text-align:left;
 }

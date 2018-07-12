@@ -33,8 +33,7 @@ class PrdDetail extends Component {
   }
 
   render() { 
-    //alert("render")
-
+    
     let topics =this.state.topics;
    
     if(this.state.isLoading){
@@ -42,16 +41,14 @@ class PrdDetail extends Component {
     }else{
       return (  
         <div className="topics-list">
+          <h2>注：AJAX数据只为展示使用，和标题内容无关</h2>
           <ul>
             {
-              topics.map(function (item) {
-                  return <li className="item" key={item.title}>{item.title}</li>
+              topics.map(function (item,index) {
+                  return <li className="item" key={item.title}>{index+1}、{item.title}</li>
               })
             }
           </ul>
-  
-          <br/>
-  
         </div>
       );
     }

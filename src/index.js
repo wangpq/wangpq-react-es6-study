@@ -31,9 +31,7 @@ const BasicExample = () => (
     <Router>
       <div>
         <Header></Header>
-
         <hr/>
-
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/AntdDemo" component={AntdDemo}/>
@@ -41,8 +39,7 @@ const BasicExample = () => (
     </Router>
 )
 
+
 ReactDOM.render(<BasicExample/>, document.getElementById('root'));
-
-
 
 //registerServiceWorker();
